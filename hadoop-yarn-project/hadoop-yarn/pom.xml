@@ -50,7 +50,8 @@
         <groupId>org.apache.rat</groupId>
         <artifactId>apache-rat-plugin</artifactId>
         <configuration>
-          <excludes>
+	    <excludes>
+	    <exclude>hadoop-yarn-server/hadoop-yarn-server-applicationhistoryservice/src/main/resources/ats.logging.properties</exclude>		
             <exclude>conf/slaves</exclude>
             <exclude>conf/container-executor.cfg</exclude>
           </excludes>

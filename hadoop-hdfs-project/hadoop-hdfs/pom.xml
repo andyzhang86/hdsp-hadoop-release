@@ -387,7 +387,11 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
             <exclude>dev-support/findbugsExcludeFile.xml</exclude>
             <exclude>dev-support/checkstyle*</exclude>
             <exclude>dev-support/jdiff/**</exclude>
-            <exclude>dev-support/*tests</exclude>
+	    <exclude>dev-support/*tests</exclude>
+            <exclude>src/main/bin/kill-name-node</exclude>
+            <exclude>src/main/bin/kill-secondary-name-node</exclude>
+	    <exclude>src/test/java/org/apache/hadoop/hdfs/server/datanode/TestDataNodeReconfiguration.java</exclude>
+	    <exclude>src/main/java/org/apache/hadoop/hdfs/protocol/ReconfigurationProtocol.java</exclude>
             <exclude>src/main/native/*</exclude>
             <exclude>src/main/native/config/*</exclude>
             <exclude>src/main/native/m4/*</exclude>

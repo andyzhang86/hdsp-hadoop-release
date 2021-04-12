@@ -231,7 +231,9 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
             <exclude>.gitattributes</exclude>
             <exclude>.gitignore</exclude>
             <exclude>.git/**</exclude>
-            <exclude>.idea/**</exclude>
+	    <exclude>.idea/**</exclude>
+            <exclude>**/*.properties</exclude>
+            <exclude>HDP-CHANGES.txt</exclude>
             <exclude>**/build/**</exclude>
             <exclude>**/patchprocess/**</exclude>
           </excludes>

@@ -65,7 +65,11 @@
       <plugin>
         <groupId>org.apache.rat</groupId>
         <artifactId>apache-rat-plugin</artifactId>
-        <configuration>
+	<configuration>
+	  <excludes>	
+	    <exclude>src/win/template/conf/*</exclude>
+	    <exclude>src/win/resources/OnOutOfMemory.cmd</exclude>
+          </excludes>
         </configuration>
       </plugin>
     </plugins>
