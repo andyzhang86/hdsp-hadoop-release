@@ -77,7 +77,7 @@ ENV FINDBUGS_HOME /opt/findbugs
 ####
 # Install shellcheck
 ####
-RUN apt-get install -y cabal-install
+RUN apt-get install -y ghc cabal-install
 RUN cabal update && cabal install shellcheck --global
 
 ###
